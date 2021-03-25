@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid black;
+}
+tr, th, td {
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<p><strong>ATTENTION !!</strong> You are getting this notification as there was an action performed to synchronize Predix Blobstore backup service as mentioned below.</p>
+<p>The following updates have been made in the backup Predix blobstore service by automation script on <strong>[[${syncDate}]]</strong></p>
+<table style="border-color: black;" border="1">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>Created</td>
+<td>Modified</td>
+<td>This sync iteration</td>
+<td>Blobstore files</td>
+<td>S3 backup files</td>
+</tr>
+<tr>
+<td>Total Objects:</td>
+<td>[[${createdTotal}]]</td>
+<td>[[${modifiedTotal}]]</td>
+<td>[[${syncTotal}]]</td>
+<td>[[${blobTotal}]]</td>
+<td>[[${s3Total}]]</td>
+</tr>
+<tr>
+<td>Total Size:</td>
+<td>[[${createdSize}]]</td>
+<td>[[${modifiedSize}]]</td>
+<td>[[${syncSize}]]</td>
+<td>[[${blobSize}]]</td>
+<td>[[${s3Size}]]</td>
+</tr>
+</tbody>
+</table>
+<p>The backup details added as attachment for more details. Please contact @Digital OneWIND TCS DevOps Team &lt;OneWIND.TCSDevOpsTeam@ge.com&gt;&nbsp;for further clarifications.</p>
+</body>
+</html>

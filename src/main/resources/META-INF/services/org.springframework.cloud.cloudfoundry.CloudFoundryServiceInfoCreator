@@ -1,0 +1,2 @@
+com.neps.aws.blobstore.s3.sync.connector.S3BackupServiceInfoCreator
+com.neps.aws.blobstore.s3.sync.connector.BlobstoreServiceInfoCreator

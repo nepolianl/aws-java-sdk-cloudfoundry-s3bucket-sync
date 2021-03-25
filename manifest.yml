@@ -1,0 +1,15 @@
+---
+applications:
+  - name: aws-java-sdk-cloudfoundry-s3bucket-sync
+    memory: 2G
+    disk_quota: 2G
+    path: target/aws-java-sdk-cloudfoundry-s3bucket-sync.jar
+    timeout: 180
+    buildpack: java_buildpack
+    env:
+     BLOBSTORE_SERVICE_NAME: <blobstore_service_instance>
+     S3BACKUP_SERVICE_NAME: <s3backup_service_instance>
+     ENABLE_SERVER_SIDE_ENCRYPTION: false
+    services:
+     - <s3backup_service_instance>
+     - <blobstore_service_instance>
